@@ -1,0 +1,36 @@
+Question 1
+
+What is the time, space complexity of following code:
+
+int a = 0, b = 0; 
+for (i = 0; i < N; i++)
+{
+   a = a + 1;
+}
+for (j = 0; j < M; j++) 
+{
+   b = b + j;
+}
+
+ANSWER: 
+   1)first for loop will take N comparisions so it takes O(N) complexity time
+   second for loop will take M comparisions so it takes O(M) complexity time
+   so total complexity time is O(N)+O(M)=O(N+M) 
+   2)There is no additional space being utilized, the space complexity is constant i.e., O(1).
+
+Question 2:
+
+What does it mean when we say that an algorithm X is asymptotically more efficient than Y?
+a)X will be a better choice for all inputs
+b)X will be a better choice for all inputs except possibly small inputs
+c)X will be a better choice for all inputs except possibly large inputs
+d)Y will be a better choice for small inputs
+
+ANSWER:   
+b)X will be a better choice for all inputs except possibly small inputs is correct.
+
+Suppose take two variables 2*n and n**2
+For small values 1,2 both giving same result
+But for big values n**2>>>2*n
+So, growth rate of n**2 is much faster than 2*n.
+and n2 is more efficient than 2*n.
